@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+source: https://cloud.virgosvs.com/ (portal APP_ENV) + https://status.virgosvs.com/
+versioning:
+  scheme: application-build
+  current: v2.75.1
+  notes: >-
+    Virgo Cloud portal reports a BUILD_VERSION (observed v2.75.1). No public API
+    versioning policy is published; the GraphQL API at cloud.virgosvs.com/graphql/
+    is authenticated and undocumented publicly.
+status_page: https://status.virgosvs.com/
+deprecation: null
+sla: null
+deprecated_operations: []

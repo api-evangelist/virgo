@@ -1,7 +1,28 @@
 aid: virgo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/virgo.png
 name: Virgo
-description: Virgo is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Virgo builds AI foundation models for gastrointestinal (GI) endoscopy,
+  targeting gut-mediated diseases such as inflammatory bowel disease and
+  colorectal cancer. Its flagship model, EndoDINO, was trained on the largest
+  known endoscopy dataset (130,037 videos / ~3.5 billion frames), and EndoML is
+  the GI-specific tooling environment for building clinical and research
+  workflows on top of it. Virgo Cloud provides video capture and management for
+  endoscopy procedures, while Virgo Trials accelerates clinical trials with
+  automatic data capture, endoscopic scoring, placebo-response prediction,
+  subgroup identification, and AI biomarker discovery. The company was surfaced
+  as a Techstars portfolio company and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/virgo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +30,35 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-legal-name: Virgo Surgical Video Solutions, Inc.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- Healthcare
+- Life Sciences
+- Endoscopy
+- Gastroenterology
+- Clinical Trials
+- Medical Imaging
+- Foundation Models
+apis:
+- name: Virgo Cloud GraphQL API
+  description: >-
+    Authenticated GraphQL API powering the Virgo Cloud endoscopy video capture
+    and management portal. The endpoint is live but access requires an
+    authenticated session (returns 401/403 unauthenticated); no public GraphQL
+    schema, introspection, or developer documentation is published.
+  humanURL: https://cloud.virgosvs.com/
+  baseURL: https://cloud.virgosvs.com/graphql/
+  properties:
+  - type: GraphQL
+    url: https://cloud.virgosvs.com/graphql/
+  - type: Login
+    url: https://cloud.virgosvs.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +67,33 @@ maintainers:
 common:
 - type: Website
   url: https://virgosvs.com/
+- type: Blog
+  url: https://virgosvs.com/blog/
+- type: News
+  url: https://virgosvs.com/news/
+- type: Careers
+  url: https://virgosvs.com/careers/
+- type: Login
+  url: https://cloud.virgosvs.com/
+- type: TermsOfService
+  url: https://virgosvs.com/tos/
+- type: PrivacyPolicy
+  url: https://virgosvs.com/tos/#privacy
+- type: Support
+  url: mailto:info@virgosvs.com
+- type: WhitePaper
+  name: 'EndoDINO: A Foundation Model for GI Endoscopy (arXiv)'
+  url: https://arxiv.org/html/2501.05488v1
+- type: StatusPage
+  url: https://status.virgosvs.com/
+- type: Lifecycle
+  url: lifecycle/virgo-lifecycle.yml
+- type: DomainSecurity
+  url: security/virgo-domain-security.yml
+- type: LLMsTxt
+  url: llms/virgo-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,21 @@
+{
+  "repo": "virgo",
+  "feeds": [
+    {
+      "source": "https://virgosvs.com/feed.xml",
+      "feed_url": "https://virgosvs.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://virgosvs.com/",
+      "feed_url": "https://virgosvs.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 38,
+  "fetched": "2026-08-01T15:49:00Z"
+}
