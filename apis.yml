@@ -48,7 +48,7 @@ modified: '2026-07-21'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Healthcare
 - Life Sciences
 - Endoscopy
@@ -67,6 +67,7 @@ tags_raw:
 - Clinical Trials
 - Medical Imaging
 - Foundation Models
+- Machine-Learning
 apis:
 - name: Virgo Cloud GraphQL API
   description: >-
